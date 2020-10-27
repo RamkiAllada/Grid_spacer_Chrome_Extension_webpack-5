@@ -1,0 +1,22 @@
+{
+    "name": "column Checker",
+    "version": "1.0",
+    "description": "Validate the Column layout",
+    "permissions": ["storage",
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": ["main.js"],
+        "css": ["styles.css"]
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {},
+    "manifest_version": 2
+}

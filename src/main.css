@@ -1,0 +1,38 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+.wg-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c0c0c0;
+    opacity: 0.4;
+    z-index: 99999;
+    left: 0;
+    top: 65px;
+}
+.wg-overlay .wg-overlay__container .row {
+    max-width: unset;
+    width: 100vw;
+}
+.wg-overlay .wg-overlay__container .col-xs-1 {
+    height: 100vh;
+}
+.wg-overlay .wg-overlay__container .col-xs-1 .col-content {
+    background: #000;
+    height: 100%;
+}
+
+/* toolbar styles */
+
+.wg-overlay__toolbar {
+    padding: 0;
+    position: fixed;
+    height: 64px;
+    top: 0;
+    left: 0;
+    background: greenyellow;
+    width: 100vw;
+    z-index: 99999;
+}
+.wg-overlay__toolbar .tool-bar__form {
+    width: 70vw;
+}
